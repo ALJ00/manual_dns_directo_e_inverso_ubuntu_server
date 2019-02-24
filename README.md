@@ -30,7 +30,7 @@ Para iniciar la instalación del servicio DNS deberemos ejecutar el comando ***`
 
 ## Configuración de las zonas
 
-Posteriormente procederemos a editar el primer fichero ***`sudo nano /etc/bind/named.conf.local`***. En él definiremos 
+Posteriormente procederemos a editar el primer fichero ***`sudo nano /etc/bind/named.conf.local`*** . En él definiremos 
 las zonas directa e inversa.
 
 ![Foto](capturas/zonas.PNG)
