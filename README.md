@@ -19,6 +19,7 @@ accedemos al archivo interfaces para añadir los parámetros de la conexión est
 Antes de iniciar el proceso de instalación hay que actualizar los respositorios de nuestro sistema Ubuntu server.
 Para ello utilizaremos el comando ***`sudo apt update`***.
 
+
 ![Foto](capturas/update.PNG)
 
 ## Instalación del servicio Bind9
