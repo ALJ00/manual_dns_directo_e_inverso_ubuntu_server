@@ -17,7 +17,7 @@ Primeramente hay que configurar el servidor con una IP estática. Usando el coma
 accedemos al archivo interfaces para añadir los parámetros de la conexión estática.
 
 Antes de iniciar el proceso de instalación hay que actualizar los respositorios de nuestro sistema Ubuntu server.
-Para ello utilizaremos el comando ***`sudo apt update`***.
+Para ello utilizaremos el comando ***`sudo apt update`*** .
 
 
 ![Foto](capturas/update.PNG)
