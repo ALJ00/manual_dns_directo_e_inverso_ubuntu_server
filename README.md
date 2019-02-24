@@ -79,9 +79,42 @@ A continuación añadiremos registros a la zona inversa. Para ello utilizaremos 
     servidor fuertemente cualificado, y en el PTR la IP del host al revés y añadiendo .in-addr.arpa. y nuestro host. 
     
 
-## Reiniciamos el servcicio
+## Reiniciamos el servicio
 
-Con el comando***`/etc/init.d/bind9 restart`***reiniciamos el servicio.
+Con el comando***`/etc/init.d/bind9 restart`***reiniciamos el servicio.  
+
+![Foto](capturas/restart.PNG)
+
+Si algo va mal, podemos ejecutar los 
+comandos ***`named-checkconf`*** y ***`named-checkzone jose.local /etc/bind/db.jose.local`*** que nos comprobarán el 
+fichero “named.conf.local” y los ficheros de resolución de zona inversa y directa.
+
+Por último, editaremos la configuración de red de nuestro Ubuntu Server para indicar que él mismo es el servidor DNS 
+que tendrá que consultar para la resolución de nombres. Para ello utilizaremos elcomando ***`sudo nano /etc/network/interfaces`***
+
+
+![Foto](capturas/network.PNG)
+
+
+## Reiniciamos el servicio de red
+
+Una vez editada la configuración de red, tumbamos y levantamos el adaptador de red para que los cambios surtan efecto.
+Para ello utilizaremos ***`sudo ifdown enp0s3`*** y ***`sudo ifup enp0s3`***
+
+ Podemos comprobar que los cambios en la configuración de red han surtido efecto visualizando 
+ el fichero ***/etc/resolv.conf*** donde deberá aparecer la IP de localhost como servidor DNS y el nombre del dominio 
+ ficticio que hemos creado, en mi caso jose.local.
+ 
+ ![Foto](capturas/resolv.PNG)
+ 
+ ## Comprobación
+ 
+ Una vez llegados a este punto, ya tendremos nuestro servidor DNS local instalado, configurado y funcionando 
+ correctamente. Vamos a realizar un par de pruebas con ***nslookup*** para comprobar si el servidor DNS resuelve 
+ correctamente los nombres y las IPs.
+
+
+
 
 
 
