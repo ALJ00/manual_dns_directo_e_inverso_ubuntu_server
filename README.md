@@ -113,6 +113,8 @@ Para ello utilizaremos ***`sudo ifdown enp0s3`*** y ***`sudo ifup enp0s3`***
  Una vez llegados a este punto, ya tendremos nuestro servidor DNS local instalado, configurado y funcionando 
  correctamente. Vamos a realizar un par de pruebas con ***nslookup*** para comprobar si el servidor DNS resuelve 
  correctamente los nombres y las IPs.
+ 
+  ![Foto](capturas/nslookup.PNG)
 
 
 
