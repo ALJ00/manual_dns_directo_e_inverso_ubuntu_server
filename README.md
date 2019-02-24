@@ -91,7 +91,7 @@ comandos ***`named-checkconf`*** y ***`named-checkzone jose.local /etc/bind/db.j
 fichero “named.conf.local” y los ficheros de resolución de zona inversa y directa.
 
 Por último, editaremos la configuración de red de nuestro Ubuntu Server para indicar que él mismo es el servidor DNS 
-que tendrá que consultar para la resolución de nombres. Para ello utilizaremos elcomando ***`sudo nano /etc/network/interfaces`***
+que tendrá que consultar para la resolución de nombres. Para ello utilizaremos el comando ***`sudo nano /etc/network/interfaces`***
 
 
 ![Foto](capturas/network.PNG)
