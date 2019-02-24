@@ -41,7 +41,7 @@ las zonas directa e inversa.
     En file ponemos la dirección y nombre del fichero, hay que acordarse de poner db.nombre_zona .
 
 Definidas las zonas, hay que proceder a chequear que se haya editado correctamente el fichero sin errores de sintaxis.
-Para ello hay que utilizar el comando ***`sudo named-checkconf /etc/bind/named.conf.local`***. Si tras ejecutar el comando
+Para ello hay que utilizar el comando ***`sudo named-checkconf /etc/bind/named.conf.local`*** . Si tras ejecutar el comando
 no hace nada, significa que no hay ningún error.
 
 ![Foto](capturas/checkonfg.PNG)
@@ -49,7 +49,7 @@ no hace nada, significa que no hay ningún error.
 ## Configuración BD
 Chequeado el paso anterior se procede a crear los ficheros de zona que hemos indicado en el paso anterior. 
 Para su creación vamos a tomar como plantillas ficheros de zonas que se crean al instalar el paquete bind9 y 
-los editaremos. Para la zona directa crearemos el fichero ***`/etc/bind/db.midominio.local`***. Para ello utilizaremos
+los editaremos. Para la zona directa crearemos el fichero ***`/etc/bind/db.midominio.local`*** . Para ello utilizaremos
 el comando ***`sudo cp /etc/bind/db.local /etc/bind/db.midominio.local`***
 
 ![Foto](capturas/bdlocal.PNG)
@@ -82,7 +82,7 @@ A continuación añadiremos registros a la zona inversa. Para ello utilizaremos 
 
 ## Reiniciamos el servicio
 
-Con el comando***`/etc/init.d/bind9 restart`***reiniciamos el servicio.  
+Con el comando ***`/etc/init.d/bind9 restart`*** reiniciamos el servicio.  
 
 ![Foto](capturas/restart.PNG)
 
