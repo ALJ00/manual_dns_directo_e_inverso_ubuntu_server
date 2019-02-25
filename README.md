@@ -57,14 +57,13 @@ el comando ***`sudo cp /etc/bind/db.local /etc/bind/db.midominio.local`***
 Una vez creado el fichero lo editaremos y cambiaremos/añadiremos el nombre del dominio y las entidades  por las nuestras.
 Para ello utilizaremos el comando ***`sudo nano /etc/bind/db.midominio.local`***
 
-![Foto](capturas/dbLocal.PNG)
+![Foto](capturas/arroba.PNG)
 
      Este fichero vendrá relleno y solo tendremos que cambiar los parametros por los nuestros. El SOA determina el 
     propietario de la zona, pondríamos el nombre de nuestra zona, en mi caso 
     (jose.local.). Los números que nos aparecen son parámetros. El NS sería 
-    nuestro servidor autorizado, en el A ponemos nuestro host y su IP. En éste caso pondremos dos host (A), el servidor 
-    y cliente, con sus respectivas direcciones IP. La AAAA es el host de IPv6, con lo cual lo dejamos tal cual está sin
-     configurar.
+    nuestro servidor autorizado que mediante la @ hay que decirle qué dirección tiene.En el A ponemos nuestro host y su IP. En éste caso pondremos dos host (A), el servidor 
+    y cliente, con sus respectivas direcciones IP. 
 
 
 Nuevamente procederemos a chequear que hayamos realizado correctamente esta paso anterior y asegurarnos que no hayamos
