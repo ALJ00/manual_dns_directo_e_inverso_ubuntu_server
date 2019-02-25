@@ -57,7 +57,7 @@ el comando ***`sudo cp /etc/bind/db.local /etc/bind/db.midominio.local`***
 Una vez creado el fichero lo editaremos y cambiaremos/añadiremos el nombre del dominio y las entidades  por las nuestras.
 Para ello utilizaremos el comando ***`sudo nano /etc/bind/db.midominio.local`***
 
-![Foto](capturas/bdlocal.PNG)
+![Foto](capturas/dbLocal.PNG)
 
      Este fichero vendrá relleno y solo tendremos que cambiar los parametros por los nuestros. El SOA determina el 
     propietario de la zona, pondríamos el nombre de nuestra zona, en mi caso 
