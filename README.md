@@ -57,7 +57,7 @@ el comando ***`sudo cp /etc/bind/db.local /etc/bind/db.midominio.local`***
 Una vez creado el fichero lo editaremos y cambiaremos/añadiremos el nombre del dominio y las entidades  por las nuestras.
 Para ello utilizaremos el comando ***`sudo nano /etc/bind/db.midominio.local`***
 
-![Foto](capturas/bddirecta.PNG)
+![Foto](capturas/dblocal.PNG)
 
      Este fichero vendrá relleno y solo tendremos que cambiar los parametros por los nuestros. El SOA determina el 
     propietario de la zona, pondríamos el nombre de nuestra zona, en mi caso 
@@ -74,7 +74,7 @@ Para ello utilizaremos ***`sudo named-checkconf midominio.local /etc/bind/db.mid
 A continuación añadiremos registros a la zona inversa. Para ello utilizaremos el comando
  ***`sudo nano /etc/bind/db.tudireccion`***
  
-![Foto](capturas/regZonaInversa.PNG)
+![Foto](capturas/10.PNG)
 
     Nos encontramos con el SOA explicado anteriormente en el que realizamos mismo proceso. En el NS ponemos nuestro 
     servidor fuertemente cualificado, y en el PTR la IP del host al revés y añadiendo .in-addr.arpa. y nuestro host. 
